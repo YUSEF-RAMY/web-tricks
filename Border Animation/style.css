@@ -1,0 +1,40 @@
+.card{
+    margin: 0 auto;
+    width:300px;
+    height:300px;
+    background-color: black;
+    position: relative;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.card h2{
+    font-size: 2rem;
+    color: #ff4a4a;
+    text-align: center;
+    z-index: 2;
+}
+.card::before{
+    content:"";
+    position: absolute;
+    width: 150px;
+    height:140%;
+    background-image: linear-gradient(
+        #ff1b1b,
+        #ff8585
+    ) ;
+    animation: rotate 3s linear infinite;
+}
+.card::after{
+    content:"";
+    position: absolute;
+    inset: 8px;
+    background-color: #030029;
+    border-radius: inherit;
+}
+@keyframes rotate {
+    100%{
+        rotate:360deg;
+    }
+}
