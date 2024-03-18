@@ -20,6 +20,7 @@
     position: absolute;
     width: 150px;
     height:140%;
+    filter: blur(40px);
     background-image: linear-gradient(
         #ff1b1b,
         #ff8585
